@@ -32,14 +32,8 @@
 /* TODO: Replace these Google Fonts with the ones you want to use on your site. */
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
-/* Eczar Font (for headers or special text) */
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
-
-/* Rubik Font (clean and modern for body text) */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
-
-/* Inter Font (great for readability and minimal design) */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Roboto Font (for headers or special text) */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*
 
@@ -105,9 +99,9 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Inter", sans-serif;
-  --font-family-heading: "Eczar", serif;
-  --font-family-project-title: "Eczar", serif;
+  --font-family-body: "Roboto", sans-serif;
+  --font-family-heading: "Roboto", sans-serif;
+  --font-family-project-title: "Roboto", sans-serif;
   /* Core Colours */
   --color-text-primary: #222;
   --color-text-secondary: #333;
@@ -150,9 +144,14 @@
   --color-bg-full-width: #f5f5f5;
   --color-bg-project-description: #f5f5f5;
   --color-bg-sidebar-project: orangered;
-  --color-bg-sidebar-work: lemonchiffon;
+  --color-bg-sidebar-work: rgb(46, 152, 155);
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
-  --color-gradient-project-details: linear-gradient(-225deg, #ff057c 0%, #8d0b93 50%, #321575 100%);
+  --color-gradient-project-details: linear-gradient(
+    -225deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
@@ -234,7 +233,9 @@ body {
 /* ------------------------------- */
 
 ::selection {
-  background: var(--color-bg-selection); /* Uses your custom color for highlighted text */
+  background: var(
+    --color-bg-selection
+  ); /* Uses your custom color for highlighted text */
 }
 
 /* ---------------------------------------- */
@@ -761,7 +762,9 @@ a.nav-link-primary:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--color-bg-full-width); /* Background color for full-width sections */
+  background: var(
+    --color-bg-full-width
+  ); /* Background color for full-width sections */
   margin-bottom: 1rem;
 }
 
@@ -815,13 +818,17 @@ a.nav-link-primary:hover {
 .portfolio,
 .project-wrapper,
 .work-sidebar-wrapper {
-  padding: var(--padding-tiny); /* Padding to keep content from touching edges */
+  padding: var(
+    --padding-tiny
+  ); /* Padding to keep content from touching edges */
 }
 
 /* Work Sidebar on Mobile */
 .work-sidebar {
   width: 100%;
-  background: var(--color-bg-sidebar-work); /* Background color for the sidebar */
+  background: var(
+    --color-bg-sidebar-work
+  ); /* Background color for the sidebar */
 }
 
 /* Main Work Area with Sidebar on Mobile */
@@ -832,7 +839,10 @@ a.nav-link-primary:hover {
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Creates a responsive grid */
   grid-gap: 1rem; /* Space between grid items */
   /* The auto-fit and minmax() function help ensure responsiveness across screen sizes */
 }
@@ -871,10 +881,10 @@ a.nav-link-primary:hover {
   align-items: center;
   flex-direction: column;
   padding: var(--padding-small);
-  background-color: var(--color-overlay-primary); /* Background color of the overlay */
-  transition:
-    opacity var(--duration-normal),
-    visibility var(--duration-normal);
+  background-color: var(
+    --color-overlay-primary
+  ); /* Background color of the overlay */
+  transition: opacity var(--duration-normal), visibility var(--duration-normal);
 }
 
 /* Hover effect on work page grid items */
@@ -1167,7 +1177,9 @@ a.nav-link-primary:hover {
 .project-details {
   width: 100%;
   padding: var(--padding-small);
-  background: var(--color-gradient-project-details); /* TODO: Remove gradient background if you prefer a simpler design */
+  background: var(
+    --color-gradient-project-details
+  ); /* TODO: Remove gradient background if you prefer a simpler design */
 }
 
 /* Previous/Next Arrow Styles */
@@ -1272,7 +1284,9 @@ a.nav-link-primary:hover {
 
 .holding-page-copyright {
   font-size: 0.8rem; /* Smaller font size for copyright text */
-  color: var(--color-text-holding-footer); /* Custom color for the footer text */
+  color: var(
+    --color-text-holding-footer
+  ); /* Custom color for the footer text */
   margin-bottom: 0; /* Removes default margin from the bottom of the copyright text */
 }
 
