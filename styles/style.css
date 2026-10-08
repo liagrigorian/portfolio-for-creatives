@@ -144,8 +144,8 @@
   --color-bg-full-width: #f5f5f5;
   --color-bg-project-description: #f5f5f5;
   --color-bg-sidebar-project: orangered;
-  --color-bg-sidebar-work: rgb(46, 152, 155);
-  --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
+  --color-bg-sidebar-work: rgb(255, 255, 255);
+  --color-gradient-hero: linear-gradient(90deg, #ff00ff, #ffffff);
   --color-gradient-project-details: linear-gradient(
     -225deg,
     #ff057c 0%,
@@ -163,11 +163,6 @@
   --duration-fast: 0.15s; /* Quick interactions (hover states) */
   --duration-normal: 0.3s; /* Standard transitions (button clicks) */
   --duration-slow: 0.75s; /* Prominent animations (page transitions) */
-  /* Rounded Corners */
-  --radius-sm: 0.5rem; /* Small interactive elements */
-  --radius-md: 1rem; /* Cards/containers */
-  --radius-lg: 2rem; /* Large decorative elements */
-  --radius-full: 50%; /* Circles/pills */
   /* Padding Scale */
   --padding-tiny: 0.5rem; /* Micro-spacing: icon padding, toggle switches */
   --padding-small: 1rem; /* Compact spacing: mobile buttons, form tags */
