@@ -1,147 +1,382 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <title>Free Creative Portfolio Template: October 2025 Version | Project Page</title>
-    <meta name="description" content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="assets/branding-images/favicon.svg" />
-    <link rel="icon" type="image/png" href="assets/branding-images/favicon.png" />
-    <meta property="og:image" content="screenshot.jpg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Library · Lia Grigorian</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <style>
+      /* ===================== PROJECT PAGE ===================== */
+      .page {
+        padding: 0 var(--pad);
+      }
+      .project {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        column-gap: var(--gap);
+        align-items: start;
+      }
 
-  <body class="project-1">
-    <header class="hero-header">
-      <ul class="nav-branding">
-        <li><a href="work.html" class="custom-navigation">Work</a></li>
-        <li class="nav-branding-logo">
-          <a href="index.html"><img src="assets/branding-images/logo.svg" alt="Your portfolio logo" /></a>
-        </li>
-        <li><a href="about.html" class="custom-navigation">About</a></li>
-      </ul>
-    </header>
-    <div class="project-wrapper">
-      <aside class="project-aside">
-        <div class="project-info">
-          <h1 class="project-title">Project One Title</h1>
-          <p class="project-description">A brief description of your project goes here. The temporary colours are like pencil lines in a sketch—they shape the layout, but you’ll paint over them later. Don’t worry if they clash—they’re just placeholders for now.</p>
-          <p class="project-description">This is a sticky sidebar (<em>.project-aside</em>). To remove the sticky sidebar, see <em>Sidebar on Large Devices</em> in style.css.</p>
-          <p class="project-description"><a href="project-lightbox.html">Lightbox</a> is now available for project pages plus a new <a href="project-full-width.html">Full Width Project Page Template</a>.</p>
-        </div>
-        <ul class="project-navigation">
-          <li class="arrow">
-            <a href="project-3.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-left fa-2x"></i></a>
-          </li>
-          <li class="arrow">
-            <a href="project-2.html" class="navigation-arrow"><i class="fa-sharp fa-solid fa-arrow-right fa-2x"></i></a>
-          </li>
-        </ul>
-      </aside>
-      <main class="project-details">
-        <figure class="project-image border">
-          <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-1.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-        </figure>
-        <div class="project-description-container">
-          <div class="project-title col-2">
-            <h2>Project Description Block</h2>
-            <h3>Use this two-column layout to separate project context from detailed case study text.</h3>
-          </div>
-          <div class="project-description col-2">
-            <p>To create new project pages: copy this file, rename it, and update the navigation arrows. The responsive layout works automatically.</p>
-            <p><strong>Pro tip:</strong> Find more ready-to-use components in <a href="components.html">components.html</a> to build faster.</p>
-          </div>
-        </div>
-        <figure class="project-image">
-          <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-2.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-        </figure>
-        <figure class="project-image">
-          <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-3.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-        </figure>
-        <div class="project-description-container">
-          <div class="project-title col-2">
-            <h2>Embed Video!</h2>
-            <h3>Faster loading time is an advantage that’s impossible to overlook.</h3>
-          </div>
-          <div class="project-description col-2"><p>Embedded videos from platforms like Vimeo boost your site’s speed and SEO, keeping visitors engaged without extra load. When hosted on powerful platforms like YouTube or Vimeo, your embedded videos load much faster than if self-hosted.</p></div>
-        </div>
-        <div class="project-video-container"><iframe src="https://player.vimeo.com/video/228122256" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="responsive-iframe"></iframe></div>
-        <div class="project-image-container">
-          <figure class="project-image">
-            <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-2.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-          </figure>
-          <figure class="project-image">
-            <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-3.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-          </figure>
-        </div>
-        <figure class="project-image border">
-          <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-1.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-        </figure>
-        <div class="project-image-container">
-          <figure class="project-image">
-            <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-2.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-          </figure>
-          <figure class="project-image">
-            <img src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-3.jpg" width="1920" height="1080" loading="lazy" alt="Describe your project" />
-          </figure>
-        </div>
-      </main>
-    </div>
-    <ul class="footer-global">
-      <li class="footer-tagline">
-        <h2>Let's Connect!</h2>
-        <p>Feel free to reach out with any questions, collaborations, or just to chat about design.</p>
-      </li>
+      /* LEFT: stays fixed while the images scroll */
+      .p-left {
+        grid-column: 1/4;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0 20px;
+      }
+      .p-name a {
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .p-name a:hover {
+        font-style: italic;
+      }
+      .p-main {
+        margin-top: clamp(70px, 14vh, 150px);
+      }
+      .p-title {
+        font-weight: 400;
+        font-size: clamp(26px, 2.1vw, 34px);
+        line-height: 1.1;
+      }
+      .p-sub {
+        font-size: 14px;
+        line-height: 1.2;
+        margin-top: 3px;
+      }
+      .p-meta {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: var(--gap);
+        margin-top: clamp(28px, 5vh, 52px);
+        font-size: 14px;
+      }
+      .p-meta .m2 {
+        grid-column: 2/4;
+      }
+      .p-text {
+        margin-top: clamp(26px, 4.5vh, 48px);
+        font-size: 14px;
+        line-height: 1.3;
+      }
 
-      <li class="footer-highlights">
-        <h2>Awards & Recognition</h2>
-        <ul class="footer-awards-list">
-          <li class="footer-item"><a href="#">Dean’s List – Year or Term</a></li>
-          <li class="footer-item"><a href="#">Your Award – Name of Student Award and Year</a></li>
-          <li class="footer-item"><a href="#">Honourable Mention – Project or Competition Name</a></li>
-          <li class="footer-item"><a href="#">Other Recognition or Accolade</a></li>
-        </ul>
-      </li>
+      .p-other {
+        margin-top: auto;
+      }
+      .p-other .labels {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: var(--gap);
+        font-style: italic;
+      }
+      .p-other .labels .l2 {
+        grid-column: 2/4;
+      }
+      .p-list {
+        list-style: none;
+        margin-top: clamp(28px, 6vh, 60px);
+        font-size: clamp(16px, 1.3vw, 20px);
+        line-height: 1.3;
+      }
+      .p-list li {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .p-list a {
+        text-decoration: none;
+      }
+      .p-list a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 0.06em;
+        text-underline-offset: 0.12em;
+      }
+      .p-list em {
+        white-space: nowrap;
+      }
 
-      <li class="footer-contact-social">
-        <h2>Contact & Social</h2>
-        <ul class="footer-socials-list">
-          <li class="footer-item"><a href="#">Insta</a></li>
-          <li class="footer-item"><a href="#">LinkedIn</a></li>
-          <li class="footer-item"><a href="#">Behance</a></li>
-        </ul>
-      </li>
+      /* RIGHT: images, flush to the top and right edge */
+      .p-gallery {
+        grid-column: 4/9;
+        margin-right: calc(var(--pad) * -1);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+      .p-gallery figure {
+        grid-column: span 1;
+        margin: 0;
+        aspect-ratio: var(--r);
+      }
+      .p-gallery figure.wide {
+        grid-column: 1/3;
+      }
+      .p-gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        background: var(--grey);
+        transform: scale(0.86);
+        opacity: 0;
+        will-change: transform, opacity;
+      }
 
-      <li class="footer-full-width">
-        <p><a href="#top">Smooth scroll to the top</a></p>
-        <p class="footer-fineprint">
-          &copy; <span id="copyright-years">2020-</span>. Hand crafted with
-          <span class="heart">❤</span>
-          by James Neufeld.
-        </p>
-        <script>
-          document.getElementById("copyright-years").textContent += new Date().getFullYear();
-        </script>
-      </li>
-    </ul>
+      /* BOTTOM: only shows once you've scrolled all the way down */
+      .p-foot {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        column-gap: var(--gap);
+        padding: 16px 0;
+        font-size: 13px;
+      }
+      .p-foot a {
+        text-decoration: none;
+      }
+      .p-foot a:hover {
+        font-style: italic;
+      }
+      .p-foot .back {
+        grid-column: 1/3;
+      }
+      .p-foot .about {
+        grid-column: 8/9;
+      }
 
-    <div id="myID" class="bottomMenu hide"><a href="project-2.html">Next Project</a></div>
-
-    <script>
-      myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
+      @media (max-width: 720px) {
+        .project {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
         }
+        .p-left {
+          display: contents;
+        }
+        .p-name {
+          order: 1;
+          padding-top: 16px;
+        }
+        .p-main {
+          order: 2;
+          margin-top: 44px;
+        }
+        .p-gallery {
+          order: 3;
+          margin: 32px calc(var(--pad) * -1) 0;
+          gap: 2px;
+        }
+        .p-gallery figure {
+          aspect-ratio: var(--rm, var(--r));
+        }
+        .p-other {
+          order: 4;
+          margin-top: 48px;
+        }
+        .p-foot {
+          margin-top: 40px;
+        }
+        .p-foot .back {
+          grid-column: 1/3;
+        }
+        .p-foot {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        .p-foot .about {
+          grid-column: 3/5;
+          justify-self: end;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .p-gallery img {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <main class="project">
+        <div class="p-left">
+          <div class="p-name"><a href="index.html">Lia Grigorian——</a></div>
+
+          <div class="p-main">
+            <h1 class="p-title" id="pTitle"></h1>
+            <p class="p-sub" id="pSub"></p>
+            <div class="p-meta">
+              <span id="pYear"></span><span class="m2" id="pDetails"></span>
+            </div>
+            <p class="p-text" id="pText"></p>
+          </div>
+
+          <div class="p-other">
+            <div class="labels">
+              <span>OTHER</span><span class="l2">WORKS</span>
+            </div>
+            <ul class="p-list">
+              <li><a href="project-3.html">(1) NOJI</a><em>Branding</em></li>
+              <li>
+                <a href="project-1.html">(2) The Library</a><em>Editorial</em>
+              </li>
+              <li>
+                <a href="project-4.html">(3) Capstone</a><em>Editorial</em>
+              </li>
+              <li><a href="#">(4) Another Project</a><em>Editorial</em></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="p-gallery" id="gallery"></div>
+      </main>
+
+      <footer class="p-foot">
+        <a class="back" href="index.html">Back to Main?</a>
+        <a class="about" href="about.html">Or about Lia?</a>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script>
+      /* =====================================================
+   CONTENT: edit this block for each project.
+   To make another project page, copy this whole file
+   (e.g. to project-2.html) and change only this block.
+   img: "images/library-1.jpg"  (leave "" for a grey box)
+   size: "wide" = full width, "half" = half width (two halves sit side by side)
+   ratio: shape of the box on computer, width / height
+   phone: shape of the box on a phone (optional)
+   ===================================================== */
+      const PROJECT = {
+        title: "The Library",
+        sub: "Editorial Design",
+        year: "2025",
+        details: "Spreads (40), Covers (3)",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        images: [
+          { img: "", size: "wide", ratio: 1.93, phone: 1.55 },
+          { img: "", size: "half", ratio: 0.96, phone: 0.75 },
+          { img: "", size: "half", ratio: 0.96, phone: 0.75 },
+          { img: "", size: "wide", ratio: 1.59, phone: 1.27 },
+        ],
       };
 
-      window.addEventListener("scroll", myScrollFunc);
+      const BLANK =
+        "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+      document.getElementById("pTitle").textContent = PROJECT.title;
+      document.getElementById("pSub").textContent = PROJECT.sub;
+      document.getElementById("pYear").textContent = PROJECT.year;
+      document.getElementById("pDetails").textContent = PROJECT.details;
+      document.getElementById("pText").textContent = PROJECT.text;
+      document.title = PROJECT.title + " · Lia Grigorian";
+
+      const gallery = document.getElementById("gallery");
+      PROJECT.images.forEach((p) => {
+        const fig = document.createElement("figure");
+        if (p.size === "wide") fig.className = "wide";
+        fig.style.setProperty("--r", p.ratio);
+        fig.style.setProperty("--rm", p.phone || p.ratio);
+        const im = document.createElement("img");
+        im.alt = PROJECT.title;
+        im.src = p.img || BLANK;
+        fig.appendChild(im);
+        gallery.appendChild(fig);
+      });
+
+      /* ===== SMOOTH SCROLL ===== */
+      if (
+        typeof Lenis !== "undefined" &&
+        !matchMedia("(prefers-reduced-motion: reduce)").matches
+      ) {
+        const lenis = new Lenis({ lerp: 0.1, smoothWheel: true });
+        const tick = (t) => {
+          lenis.raf(t);
+          requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      }
+
+      /* ===== IMAGES POP IN SLOWLY AS YOU SCROLL =====
+   Each image grows from a little smaller and fades in as it rises into view. */
+      const POP_FROM = 0.86; // starting size (1 = full size). Lower = bigger pop
+      const POP_EASE = 0.07; // lower = slower, floatier
+      const POP_AT = 0.55; // how far up the screen an image gets before it's fully in
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        const items = [...gallery.querySelectorAll("figure")].map((f) => ({
+          f,
+          img: f.firstChild,
+          cur: 0,
+        }));
+        (function loop() {
+          const vh = innerHeight;
+          items.forEach((it) => {
+            const top = it.f.getBoundingClientRect().top;
+            let t = Math.max(0, Math.min(1, (vh - top) / (vh * POP_AT)));
+            const target = t * t * (3 - 2 * t);
+            it.cur += (target - it.cur) * POP_EASE;
+            it.img.style.transform = `scale(${POP_FROM + (1 - POP_FROM) * it.cur})`;
+            it.img.style.opacity = it.cur;
+          });
+          requestAnimationFrame(loop);
+        })();
+      }
+
+      /* ===== CURSOR TRAIL ===== */
+      const WORD = "take your time"; // change the word here
+      const EASE = 0.3;
+      const FLOAT = 1.5;
+      const SPEED = 0.0006;
+      const WAVE = 0.35;
+
+      if (
+        matchMedia("(hover:hover)").matches &&
+        !matchMedia("(prefers-reduced-motion: reduce)").matches
+      ) {
+        const letters = [...WORD].map((ch) => {
+          const el = document.createElement("span");
+          el.className = "cursor-letter";
+          el.textContent = ch;
+          document.body.appendChild(el);
+          return { el, x: 0, y: 0, w: el.getBoundingClientRect().width };
+        });
+        let mx = 0,
+          my = 0,
+          started = false;
+        const show = (on) =>
+          letters.forEach((l) => (l.el.style.opacity = on ? 1 : 0));
+
+        window.addEventListener("mousemove", (e) => {
+          mx = e.clientX + 16;
+          my = e.clientY + 16;
+          if (!started || letters.some((l) => !l.w)) {
+            letters.forEach((l) => (l.w = l.el.getBoundingClientRect().width));
+            let x = mx;
+            letters.forEach((l) => {
+              l.x = x;
+              l.y = my;
+              x += l.w;
+            });
+            started = letters.every((l) => l.w > 0);
+          }
+          show(true);
+        });
+        document.addEventListener("mouseleave", () => show(false));
+
+        (function tick(t) {
+          letters.forEach((l, i) => {
+            const p = letters[i - 1];
+            const tx = i === 0 ? mx : p.x + p.w;
+            const ty = i === 0 ? my : p.y;
+            l.x += (tx - l.x) * EASE;
+            l.y += (ty - l.y) * EASE;
+            const bob = Math.sin(t * SPEED * 2 * Math.PI + i * WAVE) * FLOAT;
+            l.el.style.transform = `translate(${l.x}px,${l.y + bob}px)`;
+          });
+          requestAnimationFrame(tick);
+        })(0);
+      }
     </script>
   </body>
 </html>

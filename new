@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lia Grigorian</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- HERO -->
+      <header class="grid hero">
+        <div class="name">Lia Grigorian——</div>
+        <p class="bio">
+          branding, typography, print and packaging designer, bringing
+          curiosity, attention to detail, and a willingness to explore ideas and
+          create meaningful visual solutions.
+        </p>
+        <p class="now">
+          Currently [insert activity/researching/exploration]<br />while
+          listening to [insert a song]
+        </p>
+        <a class="more u" href="about.html">More about Lia</a>
+
+        <div class="slider">
+          <div class="slider-window" id="slides"></div>
+          <div class="caption" id="caption"><span></span></div>
+        </div>
+      </header>
+
+      <!-- SELECT WORK -->
+      <section id="work">
+        <div class="grid sec-head">
+          <em class="sel">SELECT</em>
+          <span class="wk"><em>WORK</em><em>(5)</em></span>
+        </div>
+
+        <!-- data-img = your hover preview image for each project -->
+        <h2 class="works" id="works">
+          <a href="project-1.html" data-img="">The Library<sup>2026 ED</sup></a
+          ><span class="sep">/</span
+          ><a href="project-2.html" data-img="">Notesync<sup>2026 BR</sup></a
+          ><span class="sep">/</span
+          ><a href="project-3.html" data-img="">NOJI<sup>2025 BR</sup></a
+          ><span class="sep">/</span
+          ><a href="project-4.html" data-img="">Capstone<sup>2026 BR</sup></a
+          ><span class="sep"> </span
+          ><a href="#" data-img="">Another Project<sup>2026 ED</sup></a
+          ><span class="sep">/</span>
+        </h2>
+
+        <p class="grid tail"><span>And more yet to come...</span></p>
+      </section>
+
+      <!-- ARCHIVE -->
+      <section id="archive">
+        <div class="grid sec-head arch-head">
+          <span class="wk"><em>ARCHIVE</em><em>(5)</em></span>
+        </div>
+
+        <!-- To add an image: <div style="background-image:url('images/your-image.jpg')"></div> -->
+        <div class="grid thumbs">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="grid info">
+          <div class="links">
+            <a class="u" href="about.html">About Lia</a>
+            <a class="u" href="#">My Are.na</a>
+            <a class="u" href="#">Playlist</a>
+          </div>
+          <em class="k1">Issues 1-5</em
+          ><span class="v1">Spring 2025 — Fall 2026</span>
+          <p class="v-p">
+            This...branding, typography, print and packaging designer, bringing
+            curiosity, attention to detail, and a willingness to explore ideas
+            and create meaningful visual solutions.
+          </p>
+          <em class="k2">Categories</em
+          ><span class="v2">Illustration, Photography</span>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <footer class="contact">
+        <a href="https://www.instagram.com/in2findit/">in. @in2findit</a>
+        <a href="mailto:e.lialia241202@gmail.com">e.lialia241202@gmail.com</a>
+        <a class="r" href="#">lin. @liagrigorian</a>
+      </footer>
+    </div>
+
+    <div class="preview" id="preview"></div>
+
+    <script>
+      /* ===== 1. HERO SLIDER =====
+   Put your image path in `img`, e.g. "images/library.jpg". Empty = grey. */
+      const slides = [
+        { img: "", title: "Another project", meta: "Branding_2026" },
+        { img: "", title: "The Library", meta: "Editorial_2026" },
+        { img: "", title: "Notesync", meta: "Branding_2026" },
+        { img: "", title: "NOJI", meta: "Branding_2025" },
+      ];
+      const INTERVAL = 4000; // ms between slides
+
+      const win = document.getElementById("slides");
+      const cap = document.getElementById("caption");
+      const capText = cap.querySelector("span");
+      let cur = 0;
+
+      slides.forEach((s, i) => {
+        const d = document.createElement("div");
+        d.className = "slide" + (i === 0 ? " active" : "");
+        if (s.img) d.style.backgroundImage = `url("${s.img}")`;
+        win.appendChild(d);
+      });
+      const els = [...win.children];
+      const setCaption = (i) => {
+        capText.innerHTML = `${slides[i].title}<br><em>${slides[i].meta}</em>`;
+      };
+      setCaption(0);
+
+      function go(next) {
+        if (next === cur) return;
+        const from = els[cur],
+          to = els[next];
+        to.style.transition = "none";
+        to.classList.remove("leaving");
+        to.style.transform = "translateX(100%)";
+        void to.offsetWidth;
+        to.style.transition = "";
+        to.style.transform = "";
+        from.classList.remove("active");
+        from.classList.add("leaving");
+        to.classList.add("active");
+        cap.classList.add("fade");
+        setTimeout(() => {
+          setCaption(next);
+          cap.classList.remove("fade");
+        }, 350);
+        cur = next;
+      }
+      if (
+        !matchMedia("(prefers-reduced-motion: reduce)").matches &&
+        slides.length > 1
+      )
+        setInterval(() => go((cur + 1) % slides.length), INTERVAL);
+
+      /* ===== 2. HOVER PREVIEWS ===== */
+      const prev = document.getElementById("preview");
+      let px = 0,
+        py = 0,
+        tx = 0,
+        ty = 0,
+        raf = null;
+
+      document.querySelectorAll("#works a").forEach((a) => {
+        a.addEventListener("mouseenter", () => {
+          prev.style.backgroundImage = a.dataset.img
+            ? `url("${a.dataset.img}")`
+            : "none";
+          prev.classList.add("on");
+          if (!raf) loop();
+        });
+        a.addEventListener("mouseleave", () => prev.classList.remove("on"));
+      });
+      window.addEventListener("mousemove", (e) => {
+        tx = e.clientX + 24;
+        ty = e.clientY - 75;
+      });
+
+      function loop() {
+        px += (tx - px) * 0.18;
+        py += (ty - py) * 0.18;
+        prev.style.left = px + "px";
+        prev.style.top = py + "px";
+        raf =
+          prev.classList.contains("on") || Math.abs(tx - px) > 0.5
+            ? requestAnimationFrame(loop)
+            : null;
+      }
+    </script>
+  </body>
+</html>
