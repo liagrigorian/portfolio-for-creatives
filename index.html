@@ -52,7 +52,11 @@
         </p>
         <p class="now">
           Currently [insert activity/researching/exploration]<br />while
-          listening to [insert a song]
+          listening to
+          <a
+            href="https://open.spotify.com/track/6uYxmyVvwe1uWkS7hQkMxg?si=bfdfa654697046f3"
+            >A/B by Fine</a
+          >
         </p>
         <a class="more u" href="about.html">More about Lia</a>
 
@@ -150,15 +154,26 @@
 
       /* Hero slider: images + captions, in order */
       const slides = [
-        { img: "", title: "Another project", meta: "Branding_2026" },
-        { img: "", title: "The Library", meta: "Editorial_2026" },
-        { img: "", title: "Notesync", meta: "Branding_2026" },
-        { img: "", title: "NOJI", meta: "Branding_2025" },
+        {
+          img: "assets/temp/slider_library.jpg",
+          title: "The Library",
+          meta: "Editorial_2025",
+        },
+        {
+          img: "assets/temp/slider_notesync.jpg",
+          title: "Notesync",
+          meta: "Branding_2026",
+        },
+        {
+          img: "assets/temp/slider_noji.jpg",
+          title: "NOJI",
+          meta: "Branding_2025",
+        },
       ];
 
       /* Hover preview for each project title, in order:
    The Library, Notesync, NOJI, Capstone, Another Project */
-      const previews = ["", "", "", "", ""];
+      const previews = ["", "", "assets/temp/preview_noji.jpg", "", ""];
 
       /* Archive: 8 images, left to right, each with its own text */
       const archive = [
